@@ -1,0 +1,85 @@
+html,
+body {
+    margin: 0;
+}
+*{
+    margin: 0px;
+    padding: 0px;    
+    box-sizing: border-box;
+}
+.form{
+    background-color: #e3e2e2;
+    box-shadow: 0px 0px 10px #bebebe;
+    width: 90%;
+    margin: 30px auto;
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 70%;
+    margin: auto;
+}
+label{
+    font-size: 15px;
+    font-weight: 700;
+}
+.c-v{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: auto;
+    gap: 10px;
+}
+.class{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: auto;
+    gap: 10px;
+}
+#photo{
+    display: flex;
+    justify-content: center;
+}
+
+.form-button button{
+    background-color: rgb(125, 125, 145);
+    color: white;
+    margin: auto;
+    width: 50%;
+    padding: 10px 0px;
+}
+.form-button button:hover{
+    background-color: #0022aa;
+}
+
+@media (min-width: 361px){
+    .c-v {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .form{
+        width: 70%;
+    }
+    .form-button button{
+        width: 40%;
+    }
+}
+
+@media (min-width: 769px){
+    .class{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .form{
+        width: 50%;
+    }
+    .form-button button{
+        width: 25%;
+    }
+}
